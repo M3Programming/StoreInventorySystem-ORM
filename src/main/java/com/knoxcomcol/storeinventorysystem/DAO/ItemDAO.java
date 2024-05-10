@@ -18,7 +18,7 @@ import org.hibernate.cfg.Configuration;
 
 public class ItemDAO {
 
-    private static final Logger logger = Logger.getLogger(ItemDAO.class.getName());
+    private static final Logger logger = Logger.getLogger(Item.class.getName());
 
     public void saveItem(Item item) {
         Configuration config = new Configuration();
@@ -31,7 +31,7 @@ public class ItemDAO {
             session.beginTransaction();
             session.persist(item);
             session.getTransaction().commit();
-            logger.log(Level.INFO, "Item saved successfully: {0}");
+            logger.log(Level.INFO, "Item saved successfully: ");
         }catch(HibernateException e){
             System.out.print(e);
         }

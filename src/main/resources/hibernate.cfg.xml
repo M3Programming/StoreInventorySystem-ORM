@@ -4,8 +4,7 @@
 <property name = "hibernate.connection.username">root</property>
 <property name = "hibernate.connection.password">1234</property>
 <property name = "hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-<property name = "hibernate.show_sql">true</property>
+<property name = "hibernate.show_sql">false</property>
 <property name = "hibernate.hbm2ddl.auto">create-drop</property>
-<mapping class="com.knoxcomcol.storeinventorysystem.Model.Item"/>
 </session-factory>
 </hibernate-configuration>

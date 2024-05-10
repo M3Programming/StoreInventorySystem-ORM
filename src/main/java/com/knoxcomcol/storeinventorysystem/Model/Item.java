@@ -5,12 +5,13 @@ import jakarta.persistence.*;
 
 
 @Entity
-@Table(name="items",schema="hibernate-orm")
+@Table(name="items")
 public class Item{
     
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="item_id")
     private long itemid;
 
     @Column(name = "item_name")
